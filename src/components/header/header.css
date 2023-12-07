@@ -1,0 +1,29 @@
+header{
+    padding: 0.5em 0 0 2em;
+    height: 7em;
+    background: linear-gradient(to right, #cb11ab ,#481173)
+}
+
+.logo{
+    margin-right: 1em;
+}
+
+.link_logo{
+    color: white;
+    font-size: 2.4em;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bace_header{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.bace_header:nth-child(1){
+    margin-right: 2em;
+}

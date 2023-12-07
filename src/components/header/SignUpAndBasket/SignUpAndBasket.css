@@ -1,0 +1,24 @@
+.SignUpAndBasket{
+    display: flex;
+}
+
+ul{
+    margin-left: 1.5em;
+}
+
+ul a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li{
+    font-size: 14px;
+    color: rgba(255,255,255,.6);
+    list-style-type: none;
+}
+
+ul:hover li{
+    color: white;
+    transition: all .3s;
+}

@@ -1,0 +1,21 @@
+.header_location_and_works{
+    display: flex;
+    font-size: 14px;
+}
+
+.header_location, .header_work {
+    color: rgba(255,255,255,.6);
+}
+
+.header_work {
+    margin-left: 1.7em;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    transition: all .3s;
+}
