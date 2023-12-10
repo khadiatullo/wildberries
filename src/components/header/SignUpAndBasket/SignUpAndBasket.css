@@ -13,9 +13,12 @@ ul a{
 }
 
 li{
+    list-style-type: none;
+}
+
+.logo_name{
     font-size: 14px;
     color: rgba(255,255,255,.6);
-    list-style-type: none;
 }
 
 ul:hover li{

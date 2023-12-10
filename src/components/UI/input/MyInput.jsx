@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import './MyInput.css'
 
-function MyInput(props){
+function MyInput({placeholder}){
+
+    const [value, setValue] = useState('Lets go!')
+
     return(
-        <input type="text" placeholder={props.placeholder}/>
+        <input onChange={(e) => setValue(e.target.value)} value={value} type="text" placeholder={placeholder}/>
     )
 }
 

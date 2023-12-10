@@ -1,4 +1,7 @@
 import "./SignUpAndBasket.css";
+import { MdLocationOn} from "react-icons/md";
+import { IoPerson } from "react-icons/io5";
+import { BsCart2 } from "react-icons/bs";
 
 function SignUpAndBasket() {
   return (
@@ -6,43 +9,22 @@ function SignUpAndBasket() {
 
       <ul>
         <a href="/">
-          <li>
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/material-sharp/24/FFFFFF/marker.png"
-              alt="marker"
-            />
-          </li>
-          <li>Адреса</li>
+          <li><MdLocationOn style={{width: '30px', height: '30px', color: 'white'}}/></li>
+          <li className="logo_name">Адреса</li>
         </a>
       </ul>
 
       <ul>
         <a href="/">
-          <li>
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/pastel-glyph/64/FFFFFF/person-male--v3.png"
-              alt="person-male--v3"
-            />
-          </li>
-          <li>Войти</li>
+          <li><IoPerson style={{width: '30px', height: '30px', color: 'white'}}/></li>
+          <li className="logo_name">Войти</li>
         </a>
       </ul>
 
       <ul>
         <a href="/">
-          <li>
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-glyphs/30/FFFFFF/shopping-cart--v1.png"
-              alt="shopping-cart--v1"
-            />
-          </li>
-          <li>Корзина</li>
+          <li><BsCart2 style={{width: '30px', height: '30px', color: 'white'}}/></li>
+          <li className="logo_name">Корзина</li>
         </a>
       </ul>
       
