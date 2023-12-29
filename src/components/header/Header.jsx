@@ -4,7 +4,8 @@ import InformationHeader from "./Information/InformationHeader";
 import SignUpAndBasket from "./SignUpAndBasket/SignUpAndBasket.jsx";
 import "./header.css";
 
-function Header() {
+function Header({nameLogo}) {
+
   return (
     <header>
       <InformationHeader />
@@ -13,11 +14,11 @@ function Header() {
         
         <div className="logo">
           <a className="link_logo" href="/">
-            WILDBERRIES
+            {nameLogo}
           </a>
         </div>
 
-        <BurgerBtn />
+        <BurgerBtn/>
 
         <MyInput placeholder="Найти на Wildberries" />
 

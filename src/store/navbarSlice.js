@@ -1,20 +1,18 @@
-// import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
-// const initialState = {
-//     menu: ['Женщинам', 'Мужчинам', 'Детям', 'Обувь']
-// }
+export const navbarSlice = createSlice({
+    name: 'navBar',
+    initialState: {
+        active: false
+    },
 
-// export const navbarSlice = createSlice({
-//     name: 'navBar',
-//     initialState,
+    reducers: {
+        changeStateMenu: (state) => {
+            state.active = !state.active
+        }
+    }
+})
 
-//     reducers: {
-//         addendum: (initialState) => {
-//             initialState.map((initState) => {
-//                 <li>{initState}</li>
-//             })
-//         }
-//     }
-// })
+export const {changeStateMenu} = navbarSlice.actions
 
-// export default navbarSlice.reducer
+export default navbarSlice.reducer

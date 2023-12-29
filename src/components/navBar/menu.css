@@ -1,0 +1,50 @@
+.NavBar{
+    position: fixed;
+    z-index: 5;
+}
+.menu{
+    position: fixed;
+    left: auto;
+    background-color: white;
+    overflow-y: auto;
+    height: 85vh;
+    width: 19em;
+    transform: translateX(-100%);
+    transition: all .2s;
+}
+
+
+.blur.active{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    overflow-y: hidden;
+}
+
+.menu.active{
+    transform: translateX(0);
+    transition: all .2s;
+}
+
+.main_menu{
+    margin: 1.5em 1em 0 1.7em;
+}
+
+.list_menu{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: black;
+    padding: 0.5em 0 0.5em 0.5em;
+}
+
+.list_menu li{
+    margin-left: 10px;
+}
+
+.list_menu:hover{
+    background-color: rgba(236, 235, 235, 0.6);
+    border-radius: 5px;
+}

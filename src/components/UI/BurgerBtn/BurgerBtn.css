@@ -23,12 +23,28 @@ button span {
   text-align: center;
 }
 
-button span:nth-child(1) {
+.header_burger_btn span:nth-child(1) {
   transform: translateY(10px);
+  transition: all .3s;
 }
 
-button span:nth-child(3) {
+.header_burger_btn span:nth-child(3) {
   transform: translateY(-10px);
+  transition: all .3s;
+}
+
+.header_burger_btn.active span:nth-child(1) {
+  transform: translateY(0) rotate(-45deg);
+  transition: all .3s;
+}
+
+.header_burger_btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header_burger_btn.active span:nth-child(3) {
+  transform: translateY(0) rotate(45deg);
+  transition: all .3s;
 }
 
 button:hover{

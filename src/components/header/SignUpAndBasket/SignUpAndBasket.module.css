@@ -2,11 +2,11 @@
     display: flex;
 }
 
-ul{
+.list_header{
     margin-left: 1.5em;
 }
 
-ul a{
+.list_header a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@ li{
     color: rgba(255,255,255,.6);
 }
 
-ul:hover li{
+.list_header:hover li{
     color: white;
     transition: all .3s;
 }
