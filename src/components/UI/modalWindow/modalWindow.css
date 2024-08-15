@@ -1,0 +1,53 @@
+.modal_window{
+    display: flex;
+    position: fixed;
+    left: 42%;
+    top: -10em;
+    width: 15em;
+    height: 2.5em;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    opacity: .8;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    animation-name: modal_winwow_add_cart;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.01, 0.99, 0, 0.80);
+}
+
+@keyframes modal_winwow_add_cart{
+    from{
+        top: -10em;
+    } 50% {
+        top: 30%;
+    } to {
+        top: -10em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modal_window{
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .modal_window{
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .modal_window{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .modal_window{
+        left: 15%;
+    }
+}

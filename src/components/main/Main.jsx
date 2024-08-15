@@ -13,14 +13,24 @@ import img10 from '../../images/u5g5hilc.png'
 import img11 from '../../images/yzb97i4b.png'
 import img12 from '../../images/zmiqlhhe.png'
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+import { useDispatch } from 'react-redux';
+import { fetchProduct } from '../../store/productSlice';
+import { useEffect } from 'react';
+import ProductList from './products/ProductList';
 
 function Main(){
-    const slides = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12]
+
+    const slides = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchProduct())
+    }, [dispatch])
+
     return(
         <main>
-            <div className="container_slider">
-                <ImageSlider slides={slides} leftArrow={<FaArrowLeftLong/>} rightArrow={<FaArrowRightLong/>}/>
-            </div>
+            <ImageSlider slides={slides} leftArrow={<FaArrowLeftLong/>} rightArrow={<FaArrowRightLong/>}/>
+            <ProductList/>
         </main>
     )
 }

@@ -1,0 +1,18 @@
+.notFoundPage{
+    margin: 2em 2em;
+    min-width: 20em;
+}
+
+.notFoundPage h1{
+    margin: 0 0 .5em .4em;
+}
+
+.btn_notFoundPage{
+    margin: 0;
+    margin-top: 2em;
+}
+
+.not_found_btn{
+    display: block;
+    width: 10em;
+}

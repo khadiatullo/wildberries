@@ -1,0 +1,47 @@
+.form_sign_up{
+    width: 450px;
+    margin: 3em auto;
+    box-shadow: -4px 8px 23px 0px rgba(34, 60, 80, 0.2);
+    padding: 3.5em 2.5em;
+    border-radius: 20px;
+    border-color: none;
+}
+
+.signUpTitle{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form_sign_up_input{
+    border: 1px solid #d3d4dd;
+    border-radius: 8px;
+    background-color: #f1f1f5;
+    border-color: #f1f1f5;
+    padding: 1.5em 0 1.5em 1em;
+    width: 100%;
+    height: 2.5em;
+    margin-bottom: .8em;
+}
+
+.form_sign_up_input_btn{
+    margin-bottom: 1.4em;
+}
+
+.form_sign_up_description{
+    font-size: 14px;
+}
+
+.check_mark{
+    color: blueviolet;
+    margin-right: .5em;
+}
+
+@media screen and (max-width: 767px){
+    .form_sign_up{
+        box-shadow: none;
+        width: 380px;
+    }
+    .signUpTitle{
+        font-size: 18px;
+    }
+}

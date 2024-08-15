@@ -1,0 +1,83 @@
+.sidebar_sticky{
+    width: 360px;
+    height: 270px;
+}
+
+.sidebar_sticky{
+    background-color: white;
+    border-radius: 16px;
+}
+
+.sidebar_content{
+    padding: 24px;
+}
+
+.delivery_address{
+    margin-bottom: 1em;
+}
+
+.sidebar_content .delivery_address_s{
+    color: #a73afd;
+    font-weight: 600;
+    border-bottom: 2px dashed rgb(236, 220, 223);
+    transition: all .3s;
+}
+
+
+.sidebar_content .delivery_address a:hover{
+    border-bottom: 2px dashed #a73afd;
+    transition: all .3s;
+}
+
+.final_price{
+    margin-bottom: 1em;
+}
+
+.final_price p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.final_price p span{
+    font-size: 14px;
+    color: #868695;
+    margin-bottom: .5em;
+}
+
+.final_price p h2{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.agreements{
+    display: flex;
+    align-items: center;
+    color: #868695;
+    font-size: 12px;
+    margin-top: 1em;
+}
+
+.agreements_check{
+    padding: 0 3px;
+    background-color: #a73afd;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-right: .8em;
+}
+
+.agreements .agreements_text a{
+    color: black;
+    cursor: pointer;
+}
+
+.agreements .agreements_text a:hover{
+    color: #a73afd
+}
+
+@media screen and (max-width: 1162px) {
+    .sidebar_sticky{
+        width: 100%;
+    }
+}

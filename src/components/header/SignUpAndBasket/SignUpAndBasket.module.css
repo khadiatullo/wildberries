@@ -4,6 +4,7 @@
 
 .list_header{
     margin-left: 1.5em;
+    position: relative;
 }
 
 .list_header a{
@@ -24,4 +25,27 @@ li{
 .list_header:hover li{
     color: white;
     transition: all .3s;
+}
+.count_product{
+    color: rgb(133, 129, 129);
+    display: none;
+}
+
+.count_product_active{
+    position: absolute;
+    right: .6em;
+    top: -.4em;
+    font-size: .5em;
+    width: 2em;
+    height: 2em;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .SignUpAndBasket{
+        display: none;
+    }
 }

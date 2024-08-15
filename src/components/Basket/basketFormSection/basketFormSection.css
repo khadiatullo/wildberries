@@ -1,0 +1,62 @@
+.basket_form_section{
+    background-color: white;
+    padding: 2em 1em 1.5em 1.5em;
+    border-radius: 16px;
+    margin-bottom: 1.5em;
+}
+
+.basket_form_section p{
+    font-weight: 600;
+}
+
+.basket_section_wrap{
+    display: flex;
+}
+
+.basket_section_header{
+    display: inline-block;
+    margin-bottom: .8em;
+    position: relative;
+}
+
+.basket_section_header span{
+    position: absolute;
+    font-size: 14px;
+    top: -.5em;
+    right: -.5em;
+}
+
+.basket_section_wrap .basket_form_section{
+    width: 50%;
+}
+
+.basket_pay{
+    margin-right: .5em;
+}
+
+.basket_user_data{
+    margin-left: .5em;
+}
+
+.basket_links{
+    color: #a73afd;
+    cursor: pointer;
+}
+
+.basket_links:hover{
+    color: #a73afd;
+}
+
+@media screen and (max-width: 1290px) {
+    .basket_section_wrap{
+        display: block;
+    }
+
+    .basket_section_wrap .basket_form_section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1162px) {
+    
+}

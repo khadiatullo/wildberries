@@ -1,12 +1,11 @@
-import { useState } from 'react'
 import './MyInput.css'
 
-function MyInput({placeholder}){
-
-    const [value, setValue] = useState('')
+function MyInput({placeholder, value, setValue, keyDown}){
 
     return(
-        <input onChange={(e) => setValue(e.target.value)} value={value} type="text" placeholder={placeholder}/>
+        <div className='my_input'>
+            <input onKeyDown={keyDown} onChange={(e) => setValue(e.target.value)} value={value} type="text" placeholder={placeholder}/>
+        </div>
     )
 }
 

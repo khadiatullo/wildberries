@@ -2,20 +2,37 @@
     position: fixed;
     z-index: 5;
 }
+
 .menu{
     position: fixed;
-    left: auto;
-    background-color: white;
     overflow-y: auto;
-    height: 85vh;
+    background-color: white;
     width: 19em;
+    height: calc(100% - 7.2em);
+    top: 7.2em;
+    left: auto;
     transform: translateX(-100%);
     transition: all .2s;
 }
 
+.menu::-webkit-scrollbar{
+    width: 6px;
+}
+
+.menu::-webkit-scrollbar-thumb{
+    background-color: #f1f1f5;
+    border-radius: 16px;
+    transition: all .4s;
+}
+
+.menu::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(210, 210, 210);
+    transition: all .4s;
+}
 
 .blur.active{
     position: fixed;
+    top: 0;
     height: 100%;
     width: 100%;
     background-color: black;
@@ -29,7 +46,7 @@
 }
 
 .main_menu{
-    margin: 1.5em 1em 0 1.7em;
+    margin: 1.5em 1em;
 }
 
 .list_menu{
@@ -40,11 +57,19 @@
     padding: 0.5em 0 0.5em 0.5em;
 }
 
-.list_menu li{
+.list_menu p{
     margin-left: 10px;
 }
 
 .list_menu:hover{
     background-color: rgba(236, 235, 235, 0.6);
     border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu{
+        height: calc(100% - 4em);
+        top: 4em;
+        width: 100%;
+    }
 }

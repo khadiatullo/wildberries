@@ -1,4 +1,4 @@
-button {
+.btn_menu {
   position: relative;
   width: 2.6em;
   height: 2.6em;
@@ -10,7 +10,7 @@ button {
   cursor: pointer;
 }
 
-button span {
+.btn_menu span {
   position: absolute;
   width: 2em;
   height: 3px;
@@ -50,4 +50,14 @@ button span {
 button:hover{
   border: 1px white solid;
   transition: all .5s;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn_menu{
+      display: none;
+  }
+
+  .icon_header_bottom{
+    display: block;
+  }
 }

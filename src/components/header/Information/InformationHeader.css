@@ -1,6 +1,7 @@
 .header_location_and_works{
     display: flex;
     font-size: 14px;
+    margin-right: 1em;
 }
 
 .header_location, .header_work {
@@ -15,7 +16,19 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+.header_location:hover{
     color: white;
     transition: all .3s;
+}
+
+.location_icon{
+    opacity: '.3';
+    color: rgba(255,255,255,.6);
+    margin-right: .2em;
+}
+
+@media screen and (max-width: 1024px) {
+    .header_location_and_works{
+        display: none;
+    }
 }

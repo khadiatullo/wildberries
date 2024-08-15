@@ -37,26 +37,27 @@ function ImageSlider({slides, leftArrow, rightArrow}){
     
     useEffect(() => {
         let interval = setInterval(() => setCurrentIndex(prevState => prevState === slides.length - 1 ? 0 : prevState + 1), 10000)
-        console.log('bb');
         return () => {
             clearInterval(interval)
         }
     })
 
     return (
-        <div className='slider'>
+        <div className='container_slider'>
+            <div className='slider'>
 
-            <div className='arrows'>
-                <div className='leftArrow' onClick={goToPrevious}>{leftArrow}</div>
-                <div className='rightArrow' onClick={goToNext}>{rightArrow}</div>
+                <div className='arrows'>
+                    <div className='leftArrow' onClick={goToPrevious}>{leftArrow}</div>
+                    <div className='rightArrow' onClick={goToNext}>{rightArrow}</div>
+                </div>
+
+                <div className='slide' style={{backgroundImage: `url(${slides[currentIndex]})`}}></div>
+
+                <div className='dots_container'>
+                    {slides.map((slide, slideIndex) => <div key={slideIndex} style={{color: currentIndex === slideIndex ? 'white' : 'gray'}} onClick={() => goToSlide(slideIndex)}>•</div>)}
+                </div>
+
             </div>
-
-            <div className='slide' style={{backgroundImage: `url(${slides[currentIndex]})`}}></div>
-
-            <div className='dots_container'>
-                {slides.map((slide, slideIndex) => <div key={slideIndex} style={{color: currentIndex === slideIndex ? 'white' : 'gray'}} onClick={() => goToSlide(slideIndex)}>•</div>)}
-            </div>
-
         </div>
     )
 }

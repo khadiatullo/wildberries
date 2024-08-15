@@ -1,0 +1,24 @@
+.basket{
+    background-color: rgb(249, 248, 248);
+    min-width: 20em;
+}
+
+.basket-page_basket-form{
+    display: flex;
+    justify-content: center;
+    padding: 2em 1em;
+}
+
+.basket_form_content{
+    margin: 0 2.5em 0 0;
+}
+
+@media screen and (max-width: 1162px) {
+    .basket-page_basket-form{
+        display: block;
+    }
+
+    .basket_form_content{
+        margin: 0;
+    }
+}

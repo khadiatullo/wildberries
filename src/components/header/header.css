@@ -1,7 +1,15 @@
 header{
-    padding: 0.5em 0 0 2em;
-    height: 15vh;
-    background: linear-gradient(to right, #cb11ab ,#481173)
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    padding: 1em 2em;
+    background: linear-gradient(0deg, rgba(36, 36, 36, .05) 0, rgba(36, 36, 36, .05) 100%), linear-gradient(97deg, #ed3cca .49%, #df34d2 14.88%, #d02bd9 29.27%, #bf22e1 43.14%, #ae1ae8 57.02%, #9a10f0 70.89%, #8306f7 84.76%, #7c1af8 99.15%);
+}
+
+.header_conteiner{
+    max-width: 88em;
+    margin: auto;
 }
 
 .logo{
@@ -26,4 +34,89 @@ a{
 
 .bace_header:nth-child(1){
     margin-right: 2em;
+}
+
+.header_too{
+    display: none;
+    background-color: white;
+    width: 100%;
+    padding: 1em 1em;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+}
+
+.header_too_conteiner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon_header_bottom{
+    color: #c8c8d1;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+.header_icon{
+    display: none;
+    width: 25px;
+    height: 25px;
+    color: white;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.icon_header_bottom.active{
+    color: #a73afd;
+}
+
+.header_buttom_basket_btn{
+    position: relative;
+}
+
+.header_buttom_count_product{
+    display: none;
+}
+
+.header_buttom_count_product_active{
+    position: absolute;
+    top: -.4em;
+    right: -.7em;
+    font-size: .5em;
+    width: 2em;
+    height: 2em;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1180px) {
+    .link_logo{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        padding: 1em;
+    }
+
+    .bace_header{
+        margin: 0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .header_too{
+        display: block;
+    }
+
+    .header_icon{
+        display: block;
+    }
 }

@@ -13,10 +13,10 @@ function Menu({listMenu}) {
       <nav className={stateMenu ? 'menu active' : 'menu'}>
         <ul className='main_menu'>
 
-          {listMenu.map(list => 
-            <li className="list_menu">
+          {listMenu.map((list, index) => 
+            <li key={index} className="list_menu">
               <span>{list.logo}</span>
-              <li>{list.name}</li>
+              <p>{list.name}</p>
             </li>
           )}
 

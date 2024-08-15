@@ -13,6 +13,6 @@ export const navbarSlice = createSlice({
     }
 })
 
-export const {changeStateMenu} = navbarSlice.actions
+export const {changeStateMenu } = navbarSlice.actions
 
 export default navbarSlice.reducer
