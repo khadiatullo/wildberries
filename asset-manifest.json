@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wildberries/static/css/main.989fe0ac.css",
+    "main.js": "/wildberries/static/js/main.2d504de0.js",
+    "static/media/s4getshs.png": "/wildberries/static/media/s4getshs.6e8086fdfeee50612176.png",
+    "static/media/216tpxxs.png": "/wildberries/static/media/216tpxxs.1d00c35e3e211022af5b.png",
+    "static/media/9lmtwpaa.png": "/wildberries/static/media/9lmtwpaa.8301fb9b8b65c157bba0.png",
+    "static/media/yzb97i4b.png": "/wildberries/static/media/yzb97i4b.67f0e3720006f683d550.png",
+    "static/media/tufcrknn.png": "/wildberries/static/media/tufcrknn.31c3a7e1e24d0eea8fd3.png",
+    "static/media/9a5o3uzl.png": "/wildberries/static/media/9a5o3uzl.e3a9478257ab8f5725da.png",
+    "static/media/o56i6cgq.png": "/wildberries/static/media/o56i6cgq.5523d146e9a9c8274584.png",
+    "static/media/6bh5905m.png": "/wildberries/static/media/6bh5905m.e3c440c20a56f756d430.png",
+    "static/media/u5g5hilc.png": "/wildberries/static/media/u5g5hilc.8d4b8e35869092ab97df.png",
+    "static/media/g2i51jp5.png": "/wildberries/static/media/g2i51jp5.3c0ca8de36124d292011.png",
+    "static/media/d5uszxce.png": "/wildberries/static/media/d5uszxce.8bfdfff702358b648961.png",
+    "static/media/zmiqlhhe.png": "/wildberries/static/media/zmiqlhhe.49878fd722dbaa807ebc.png",
+    "index.html": "/wildberries/index.html",
+    "main.989fe0ac.css.map": "/wildberries/static/css/main.989fe0ac.css.map",
+    "main.2d504de0.js.map": "/wildberries/static/js/main.2d504de0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.989fe0ac.css",
+    "static/js/main.2d504de0.js"
+  ]
+}
