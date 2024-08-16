@@ -97,6 +97,7 @@ function App() {
             <Routes>
               <Route element={<NotFound/>} path='*'/>
               <Route element={<Base/>} path="/"/>
+              <Route element={<Base/>} path="/github.io/wildberries"/>
               <Route element={<Basket/>} path='/basket'/>
               <Route element={<SignUp/>} path='/signUp'/>
               <Route element={<InformProduct/>} path="/informationProduct/:id"/>
