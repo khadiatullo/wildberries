@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wildberries/static/css/main.989fe0ac.css",
-    "main.js": "/wildberries/static/js/main.2ad3835f.js",
+    "main.js": "/wildberries/static/js/main.17e0d733.js",
     "static/media/s4getshs.png": "/wildberries/static/media/s4getshs.6e8086fdfeee50612176.png",
     "static/media/216tpxxs.png": "/wildberries/static/media/216tpxxs.1d00c35e3e211022af5b.png",
     "static/media/9lmtwpaa.png": "/wildberries/static/media/9lmtwpaa.8301fb9b8b65c157bba0.png",
@@ -16,10 +16,10 @@
     "static/media/zmiqlhhe.png": "/wildberries/static/media/zmiqlhhe.49878fd722dbaa807ebc.png",
     "index.html": "/wildberries/index.html",
     "main.989fe0ac.css.map": "/wildberries/static/css/main.989fe0ac.css.map",
-    "main.2ad3835f.js.map": "/wildberries/static/js/main.2ad3835f.js.map"
+    "main.17e0d733.js.map": "/wildberries/static/js/main.17e0d733.js.map"
   },
   "entrypoints": [
     "static/css/main.989fe0ac.css",
-    "static/js/main.2ad3835f.js"
+    "static/js/main.17e0d733.js"
   ]
 }
